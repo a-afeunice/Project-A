@@ -1,0 +1,89 @@
+*{
+    margin: 0;
+}
+body{
+    font-family: Raleway,sans-serif;
+    font-weight: 400;
+}
+
+#logo{
+    width: 100px;
+}
+nav{  
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 40px;
+    z-index: 100;
+    background-size: cover;
+    position: fixed;
+    width: 100vw;
+    color: rgba(255, 255, 255, 0.5);
+}
+#nav-links{
+    display: flex;
+    column-gap: 50px;
+    width: 60%;
+    font-size: medium;
+    padding: 27.2px 16px;
+ 
+}
+
+header{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+header span{
+    font-size: 50px;
+    color: white;
+    color: white;
+}
+#hero{
+    background-image: url(../assets/images/he.jpg);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#hero-overlay{
+background-color: black;
+height: 100vh;
+width: 100vw;
+opacity: 0.3;
+}
+.search-container{
+    display: flex;
+    padding: 6px 5px 6px 30px;
+    border-radius: 0;
+    background: transparent;
+
+}
+#About{
+    height: 70vh;
+    padding: 80px;
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+    /* column-gap: 30px; */
+    width: 80vw;
+}
+.about-image{
+    width: 400px;
+    height: 400px;
+    
+}
+.about-image img{
+    width: 100%;
+    height: inherit;
+
+}
+.about-content{
+    max-width: 500px;
+}
+.about-content p{
+    padding: 20px 0;
+}
