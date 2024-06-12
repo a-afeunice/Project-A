@@ -14,10 +14,10 @@ nav{
     justify-content: space-between;
     align-items: center;
     padding: 10px 40px;
-    z-index: 100;
     background-size: cover;
     position: fixed;
     width: 100vw;
+    z-index: 100;
     color: rgba(255, 255, 255, 0.5);
 }
 #nav-links{
@@ -30,9 +30,9 @@ nav{
 }
 
 header{
-    position: absolute;
-    top: 40%;
-    left: 40%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
 header span{
     font-size: 50px;
@@ -49,16 +49,21 @@ header span{
     align-items: center;
 }
 #hero-overlay{
-background-color: black;
-height: 100vh;
-width: 100vw;
-opacity: 0.3;
+background-color: rgba(0, 0, 0, 0.233);
+height: 100%;
+width: 100%;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+row-gap: 20px;
 }
 .search-container{
     display: flex;
     padding: 6px 5px 6px 30px;
     border-radius: 0;
     background: transparent;
+    
 
 }
 #About{
@@ -66,10 +71,10 @@ opacity: 0.3;
     padding: 80px;
     display: flex;
     justify-content: space-between;
-    margin: auto;
+    /* margin: auto; */
     align-items: center;
-    /* column-gap: 30px; */
-    width: 80vw;
+    /* width: 100%; */
+    background-color:#F4F1EB;
 }
 .about-image{
     width: 400px;
@@ -77,13 +82,67 @@ opacity: 0.3;
     
 }
 .about-image img{
-    width: 100%;
-    height: inherit;
+    width: 120%;
+    height:inherit;
+    border-radius: 10px;
+    
 
 }
 .about-content{
     max-width: 500px;
 }
+.about-content h2{
+font-family: Amethysta ;
+}
 .about-content p{
     padding: 20px 0;
+    font-family: Amiri;
+    line-height: 1.8;
+    font-size: 1.05rem;
 }
+#latest{
+    background-color:rgba(78, 53, 78, 0.568) ;
+    width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 40px;
+  padding: 100px 0px;
+}
+#latest h2{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    font-family: Amethysta;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr  1fr;
+    gap: 30px;
+    
+}
+.grid-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+  }
+  .item1 {
+    grid-row-start: 1;
+     grid-row-end: 3;
+     height: 600px;
+   }
+   
+   .item2 {
+    height: 300px;
+    }
+   .item3 {
+     grid-row-start: 2;
+     grid-row-end: 5;
+     height: 600px;
+     }
+     .item4 {
+     height: 300px;
+     }
+     
